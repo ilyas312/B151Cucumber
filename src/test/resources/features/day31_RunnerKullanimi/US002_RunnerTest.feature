@@ -1,5 +1,5 @@
 Feature: US002 Amazon Urun Arama Testi
-  @iphone @techpro
+  @iphone
   Scenario: TC01 Amazonda iphone Aramasi
     Given kullanici amazon sayfasina gider
     And sayfayi yeniler

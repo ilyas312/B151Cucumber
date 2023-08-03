@@ -12,10 +12,14 @@ sayesinde calistirabiliriz. Ve plugin parametresi ile raporlar alabiliriz
 
  */
 
-@RunWith(Cucumber.class)//--Test calıştırıcı Notasyob
-@CucumberOptions(features = "src/test/resources/features",
+@RunWith(Cucumber.class)//--Test calıştırıcı Notasyon
+@CucumberOptions(plugin = {"pretty",
+                     "html:target/default-cucumber-reports.html",
+                     "json:target/json-reports/cucumber.json",
+                     "junit:target/xml-report/cucumber.xml"},
+                features = "src/test/resources/features",
                 glue = {"techproed/stepDefinition"},
-                tags = "@tech",
+                tags = "@techpro",
                 dryRun = false//-->true seçersek scenarioları kontrol eder browser'ı çalıştırmaz
 )
 
