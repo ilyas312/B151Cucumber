@@ -19,7 +19,7 @@ sayesinde calistirabiliriz. Ve plugin parametresi ile raporlar alabiliriz
                      "junit:target/xml-report/cucumber.xml"},
                 features = "src/test/resources/features",
                 glue = {"techproed/stepDefinition"},
-                tags = "@techpro",
+                tags = "@arac2",
                 dryRun = false//-->true seçersek scenarioları kontrol eder browser'ı çalıştırmaz
 )
 
